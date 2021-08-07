@@ -6,17 +6,27 @@ Write standalone install and remove scripts that can be easily managed with this
 It works like a package manager on the surface.
 ### Install programs
 Download the compatible archive (I propose the `.ism.tar.gz` extension) from the Internet and extract it.
+
 From the extracted folder's parent directory run:
+
 `sudo ism install package` (replace `package` with the extracted folder's name, that is the package name)
+
 Some programs might support user-only installation:
+
 `sudo ism user-install package`
 ### Remove programs:
 From anywhere run:
+
 `sudo ism remove package` (replace `package` with the package name)
+
 To fully remove with configuration files:
+
 `sudo ism full-remove package`
+
 If you installed for a user only:
+
 `sudo ism user-remove package`
+
 There is no user-full-remove option yet.
 ## Create packages
 Create an archive with the following contents:
